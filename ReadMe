@@ -1,0 +1,25 @@
+# CapturedPerspectivesAndroid
+
+Android booking and portfolio app built with Gradle (Kotlin DSL) and linked to Firebase.
+
+## Repository layout
+
+| Path | What it is |
+|---|---|
+| `.github/workflows/` | GitHub Actions CI workflow definitions that build the project. |
+| `.idea/` | IntelliJ/Android Studio project settings (code style, inspections, module config). Committed to the repo. |
+| `app/` | Main application module — app source code, resources, manifest, and module-level build script. The portfolio and booking features live here. |
+| `gradle/wrapper/` | Gradle wrapper JAR and properties, pinning the Gradle version for consistent builds. |
+| `.gitignore` | Git ignore rules for untracked files and directories. |
+| `build.gradle.kts` | Root build script (Kotlin DSL) declaring repositories and shared build configuration. |
+| `gradle.properties` | Project-wide Gradle settings (JVM args, AndroidX flags, etc.). |
+| `gradlew` | Gradle wrapper script for Unix-like systems. |
+| `gradlew.bat` | Gradle wrapper script for Windows. |
+| `local.properties` | Machine-specific config, normally just `sdk.dir` pointing at the local Android SDK. Committed here, though usually ignored. |
+| `settings.gradle.kts` | Gradle settings script — declares included modules (`:app`) and plugin/dependency repositories. |
+
+## Build
+
+```bash
+./gradlew assembleDebug    # debug APK
+./gradlew build            # full build
