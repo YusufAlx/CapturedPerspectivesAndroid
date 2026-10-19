@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "445675599667",
+    "project_id": "capturedperspectives-fe90f",
+    "storage_bucket": "capturedperspectives-fe90f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445675599667:android:1706ead1f1871b614ab046",
+        "android_client_info": {
+          "package_name": "com.capturedperspectives.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445675599667-1jjv8tooofa2q7c75kgsg0abtu1bjcq9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capturedperspectives.app",
+            "certificate_hash": "befddb5138c6f17fcecf2e326bf54773c6d6ea2e"
+          }
+        },
+        {
+          "client_id": "445675599667-aeiak8bb3r6cjdkp68vj1g9g03r5p9ps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC39IKQRZHVoSYP6_qzVWtecYEhGa_OQAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445675599667-aeiak8bb3r6cjdkp68vj1g9g03r5p9ps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
