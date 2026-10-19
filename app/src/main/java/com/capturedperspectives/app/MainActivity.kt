@@ -40,6 +40,8 @@ class MainActivity : Activity() {
     private lateinit var db: FirebaseFirestore
     private lateinit var content: LinearLayout
     private var category = "All"
+
+    private var currentPage = "portfolio"
     private var registering = false
     private var portfolioData: List<PortfolioItem> = samplePortfolio()
     data class PortfolioItem(val title: String, val type: String, val imageId: String, val description: String = "")
@@ -139,6 +141,7 @@ class MainActivity : Activity() {
     }
 
     private fun showShell(page: String) {
+        currentPage = page
         val root = baseRoot()
         val scroll = ScrollView(this).apply { isFillViewport = true; clipToPadding = false }
         content = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setPadding(dp(22), dp(19), dp(22), dp(28)) }
@@ -197,7 +200,9 @@ class MainActivity : Activity() {
                     val title = doc.getString("title") ?: return@mapNotNull null
                     PortfolioItem(title, doc.getString("type") ?: "Portraits", doc.getString("imageId") ?: "photo-1519741497674-611481863552", doc.getString("description") ?: "")
                 }
-                if (portfolioData.isNotEmpty()) showPortfolio()
+                if (portfolioData.isNotEmpty() && currentPage == "portfolio") {
+                    showPortfolio()
+                }
             }
         }
     }
